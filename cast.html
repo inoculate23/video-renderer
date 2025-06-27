@@ -1,0 +1,32 @@
+<script type="module" src="https://cdn.jsdelivr.net/npm/castable-video/+esm"></script>
+<script>
+   var castable = document.getElementById('video');
+
+</script>
+<castable-video
+  id="video"
+  src="https://stream.mux.com/DS00Spx1CV902MCtPj5WknGlR102V5HFkDe/high.mp4"
+></castable-video>
+
+<button onclick="castable.play()">Play</button>
+<button onclick="castable.pause()">Pause</button>
+<button id="castBtn"  onclick = "video.remote.prompt()">Cast...</button>
+
+<script type="module">
+  castable.remote.watchAvailability((available) => {
+    castBtn.hidden = !available;
+  });
+
+  castable.remote.addEventListener('connecting', function (event) {
+    console.log(event.type);
+  });
+
+  castable.remote.addEventListener('connect', function (event) {
+    console.log(event.type);
+  });
+
+  castable.remote.addEventListener('disconnect', function (event) {
+    console.log(event.type);
+  });
+
+</script>
