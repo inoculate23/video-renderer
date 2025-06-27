@@ -1,0 +1,1 @@
+{"version":3,"file":"isTainted.js","sourceRoot":"","sources":["../../../src/browser/util/isTainted.ts"],"names":[],"mappings":";;AAAA,SAAwB,SAAS,CAAC,GAA6B;IAC7D,IAAI;QACF,GAAG,CAAC,YAAY,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC;QAC7B,OAAO,KAAK,CAAC;KACd;IAAC,OAAO,GAAG,EAAE;QACZ,OAAO,IAAI,CAAC;KACb;AACH,CAAC;AAPD,4BAOC"}
